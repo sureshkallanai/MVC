@@ -1,0 +1,16 @@
+﻿@model Repository.Users
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+@Html.BeginForm("Login", "Account",FormMethod.Post)
+@{
+@Html.LabelFor(m => m.UserName);
+@Html.TextBoxFor(m => m.UserName);
+@Html.LabelFor(m => m.Password);
+@Html.TextBoxFor(m => m.Password);
+<input type="submit" id="Loging" name="Subit" />
+}
+
+
