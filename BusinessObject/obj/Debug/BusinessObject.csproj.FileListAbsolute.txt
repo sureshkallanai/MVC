@@ -32,5 +32,6 @@ D:\Suresh\Projects\DEVOPS\Jenkins\Events\BusinessObject\bin\Microsoft.AI.Web.xml
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\BusinessObject\bin\Microsoft.AI.WindowsServer.xml
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\BusinessObject\bin\Microsoft.ApplicationInsights.xml
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\BusinessObject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Suresh\Projects\DEVOPS\Jenkins\Events\BusinessObject\obj\Debug\BusinessObject.csprojResolveAssemblyReference.cache
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\BusinessObject\obj\Debug\BusinessObject.dll
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\BusinessObject\obj\Debug\BusinessObject.pdb

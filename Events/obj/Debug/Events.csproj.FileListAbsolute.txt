@@ -25,12 +25,14 @@ D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\Microsoft.AI.WindowsServer.d
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\Microsoft.ApplicationInsights.dll
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\Microsoft.Web.Infrastructure.dll
+D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\Repository.dll
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\System.Web.Helpers.dll
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\System.Web.Mvc.dll
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\System.Web.Razor.dll
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\System.Web.Webpages.Deployment.dll
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\System.Web.Webpages.dll
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\System.Web.Webpages.Razor.dll
+D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\Repository.pdb
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\EntityFramework.xml
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\EntityFramework.SqlServer.xml
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\Microsoft.AI.DependencyCollector.xml
@@ -48,5 +50,3 @@ D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\System.Web.Mvc.xml
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\obj\Debug\Events.csprojResolveAssemblyReference.cache
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\obj\Debug\Events.dll
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\obj\Debug\Events.pdb
-D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\Repository.dll
-D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\Repository.pdb
