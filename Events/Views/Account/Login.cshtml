@@ -4,8 +4,8 @@
 }
 
 <h2>Login</h2>
-@Html.BeginForm("Login", "Account",FormMethod.Post)
-@{
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
 @Html.LabelFor(m => m.UserName);
 @Html.TextBoxFor(m => m.UserName);
 @Html.LabelFor(m => m.Password);

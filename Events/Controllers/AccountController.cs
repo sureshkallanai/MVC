@@ -8,7 +8,7 @@ using System.Web.Security;
 
 namespace Events.Controllers
 {
-    [Authorize]
+  [Authorize]
     public class AccountController : Controller
     {
         // GET: Account
@@ -27,17 +27,18 @@ namespace Events.Controllers
                 return View(User);
             }
            Users user = new Users();
+            Repository.Roles role = new Repository.Roles();
             using (UOW uow = new UOW())
             {
                 user = uow._iUserRepository.Get().ToList().Where(x=>x.UserName==User.UserName&&x.Password==User.Password).FirstOrDefault();
-               // user.Role.Role = uow._iRoleRepository.Get().ToList().Where(x=>x.Rid= user.Role.Rid)
+                role = uow._iRoleRepository.Get().ToList().Where(x => x.Rid == user.Rid).FirstOrDefault();
             }
 
             if (user != null)
             {
                 FormsAuthentication.SetAuthCookie(User.UserName, false);
 
-                var authTicket = new FormsAuthenticationTicket(1, User.UserName, DateTime.Now, DateTime.Now.AddMinutes(20), false,"");
+                var authTicket = new FormsAuthenticationTicket(1, User.UserName, DateTime.Now, DateTime.Now.AddMinutes(20), false, role.Role);
                 string encryptedTicket = FormsAuthentication.Encrypt(authTicket);
                 var authCookie = new HttpCookie(FormsAuthentication.FormsCookieName, encryptedTicket);
                 HttpContext.Response.Cookies.Add(authCookie);
@@ -49,7 +50,7 @@ namespace Events.Controllers
                 return View(User);
             }            
         }
-       // [Authorize(Roles = "user")]
+       [Authorize(Roles = "admin")]
         public ActionResult Index()
         {
             return View();
@@ -58,10 +59,9 @@ namespace Events.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult LogOff()
-        {
-            //AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+        {           
             FormsAuthentication.SignOut();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Account");
         }
     }
 }
