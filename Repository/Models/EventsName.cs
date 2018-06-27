@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Repository
 {
-    public class Events
+    public class EventsName
     {
         [Key]
         public int Eid { get; set; }

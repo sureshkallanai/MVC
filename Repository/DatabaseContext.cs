@@ -12,5 +12,8 @@ namespace Repository
         
         public DbSet<Users> User { get; set; }
         public DbSet<Roles> Role { get; set; }
+        public DbSet<EventsName> Event { get; set; }
+        public DbSet<EventData> EventData { get; set; }
+       
     }
 }

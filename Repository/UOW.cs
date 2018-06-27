@@ -9,7 +9,9 @@ namespace Repository
     {
         private IUserRepository<Users> _IUserRepository;
         private IRoleRepository<Roles> _IRoleRepository;
-        
+        private IEventsRepository<EventsName> _IEventsRepository;
+        private IEventsDataRepository<EventData> _IEventsDataRepository;
+               
         public UOW()
         {
 
@@ -32,6 +34,27 @@ namespace Repository
                 if (_IRoleRepository == null)
                     _IRoleRepository = new RoleRepository(_TContext);
                 return _IRoleRepository;
+            }
+        }
+
+
+        public IEventsRepository<EventsName> _iEventsRepository
+        {
+            get
+            {
+                if (_IEventsRepository == null)
+                    _IEventsRepository = new EventsRepository(_TContext);
+                return _IEventsRepository;
+            }
+        }
+
+        public IEventsDataRepository<EventData> _iEventsDataRepository
+        {
+            get
+            {
+                if (_IEventsDataRepository == null)
+                    _IEventsDataRepository = new EventsDataRepository(_TContext);
+                return _IEventsDataRepository;
             }
         }
     }

@@ -134,6 +134,11 @@
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="Areas\HandleInfo\Views\web.config" />
+    <Content Include="Areas\HandleInfo\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\HandleInfo\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HandleInfo\Views\Info\Create.cshtml" />
+    <Content Include="Areas\HandleInfo\Views\Info\Index.cshtml" />
     <None Include="scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
@@ -145,6 +150,8 @@
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\HandleInfo\Controllers\InfoController.cs" />
+    <Compile Include="Areas\HandleInfo\HandleInfoAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\EventController.cs" />
     <Compile Include="Global.asax.cs">
@@ -165,8 +172,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Error.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -176,6 +183,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\HandleInfo\Models\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Event\" />
   </ItemGroup>

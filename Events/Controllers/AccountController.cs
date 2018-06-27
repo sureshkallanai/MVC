@@ -8,7 +8,7 @@ using System.Web.Security;
 
 namespace Events.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [HandleError()]
     public class AccountController : Controller
     {
@@ -28,6 +28,7 @@ namespace Events.Controllers
         [AllowAnonymous]
         public ActionResult Login()
         {
+
             return View();
         }
 
@@ -54,17 +55,23 @@ namespace Events.Controllers
                     return RedirectToAction("Index", "Account");
                 }
                 else
-                {                    
+                {
                     ModelState.AddModelError("", "Invalid login attempt.");
                     return RedirectToAction("Login", "Account");
                 }
-                
+
             }
         }
+
         [Authorize(Roles = "admin")]
         public ActionResult Index()
         {
-            return View();
+            IEnumerable<EventsName> ListEventsName = new List<EventsName>();
+            using (UOW uow = new UOW())
+            {
+                ListEventsName = uow._iEventsRepository.Get().ToList();
+            }
+            return View(ListEventsName);
         }
 
         [AllowAnonymous]
@@ -73,7 +80,6 @@ namespace Events.Controllers
         {
             return View();
         }
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]

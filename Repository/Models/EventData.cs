@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace Repository.Models
+namespace Repository
 {
     public class EventData
     {
@@ -16,6 +16,6 @@ namespace Repository.Models
         public string City { get; set; }
         public int Eid { get; set; }
 
-        public Events Event { get; set; }
+        public EventsName Event { get; set; }
     }
 }

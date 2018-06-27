@@ -1,0 +1,12 @@
+﻿@model Repository.EventsName
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+@using (Html.BeginForm("Create", "Info", FormMethod.Post))
+{
+    @Html.LabelFor(x=>x.EventName)
+    @Html.TextBoxFor(x => x.EventName)
+    <input type="submit" name="Submit" id="submit" />
+}

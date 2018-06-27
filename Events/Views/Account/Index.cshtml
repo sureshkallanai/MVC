@@ -1,7 +1,26 @@
-﻿
+﻿@model IEnumerable<Repository.EventsName>
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
 
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EventName)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <a href="@Url.Action("Eventdata", "info")">@Html.DisplayFor(modelItem => item.EventName)</a>
+            </td>
+        </tr>
+    }
+
+</table>
+@Html.ActionLink("Create","Create", "HandleInfo/Info")
