@@ -17,7 +17,7 @@
     {
         <tr>
             <td>
-                <a href="@Url.Action("Eventdata", "info")">@Html.DisplayFor(modelItem => item.EventName)</a>
+                <a href="@Url.Action("index", "EventsData/EData", new { id = item.Eid})">@Html.DisplayFor(modelItem => item.EventName)</a>
             </td>
         </tr>
     }

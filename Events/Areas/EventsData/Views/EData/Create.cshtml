@@ -1,0 +1,22 @@
+﻿@model Repository.EventData
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+@using (Html.BeginForm("Create", "EData", FormMethod.Post))
+{
+    @Html.LabelFor(m=>m.Name)
+    @Html.TextBoxFor(m => m.Name)
+    @Html.LabelFor(m => m.Address)
+    @Html.TextBoxFor(m => m.Address)
+    @Html.LabelFor(m => m.District)
+    @Html.TextBoxFor(m => m.District)
+    @Html.LabelFor(m => m.City)
+    @Html.TextBoxFor(m => m.City)
+    <input type="submit" name="Submit" id="submitdata" />
+}
+
+
+@Html.ActionLink("Back", "Index", "EData")
+

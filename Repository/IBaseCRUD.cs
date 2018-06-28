@@ -8,5 +8,6 @@ namespace Repository
         void Update(T _T);
         ICollection<T> Get();
         void Delete(T _T);
+        void DeleteFindByID(int id);
     }
 }
