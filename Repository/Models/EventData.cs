@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -16,6 +17,6 @@ namespace Repository
         public string City { get; set; }
         public int Eid { get; set; }
 
-        public EventsName Event { get; set; }
+        public DbSet<EventsName> Event { get; set; }
     }
 }
