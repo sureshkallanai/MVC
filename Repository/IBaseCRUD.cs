@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
 
 namespace Repository
 {
@@ -9,5 +11,6 @@ namespace Repository
         ICollection<T> Get();
         void Delete(T _T);
         void DeleteFindByID(int id);
+        IEnumerable<T> QueryObjectGraph(Expression<Func<T, bool>> filter, string children);
     }
 }

@@ -128,9 +128,9 @@
     <Compile Include="IEventsDataRepository.cs" />
     <Compile Include="IEventsRepository.cs" />
     <Compile Include="IRoleRepository.cs" />
-    <Compile Include="Migrations\201806271302367_DatabaseContext.cs" />
-    <Compile Include="Migrations\201806271302367_DatabaseContext.Designer.cs">
-      <DependentUpon>201806271302367_DatabaseContext.cs</DependentUpon>
+    <Compile Include="Migrations\201807021538234_DatabaseContext.cs" />
+    <Compile Include="Migrations\201807021538234_DatabaseContext.Designer.cs">
+      <DependentUpon>201807021538234_DatabaseContext.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\EventData.cs" />
@@ -145,8 +145,8 @@
     <Compile Include="Models\Users.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201806271302367_DatabaseContext.resx">
-      <DependentUpon>201806271302367_DatabaseContext.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807021538234_DatabaseContext.resx">
+      <DependentUpon>201807021538234_DatabaseContext.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

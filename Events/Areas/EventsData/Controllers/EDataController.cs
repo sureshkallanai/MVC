@@ -23,18 +23,20 @@ namespace Events.Areas.EventsData.Controllers
 
         public JsonResult GetTodoLists(string sidx, string sord, int page, int rows)  //Gets the todo Lists.
         {
-            DatabaseContext DatabaseContext = new DatabaseContext();
-            DatabaseContext.Configuration.LazyLoadingEnabled = false;
-            int id = Convert.ToInt32(TempData["id"]);
-            TempData.Keep("id");
+            //DatabaseContext DatabaseContext = new DatabaseContext();
+            //DatabaseContext.Configuration.LazyLoadingEnabled = false;            
             IEnumerable<EventData> EventsData = new List<EventData>();
             using (UOW uow = new UOW())
             {
-               var EventsData1 = uow._iEventsDataRepository.Get().ToList();
-                EventsData = uow._iEventsDataRepository.Get().ToList().Where(x=>x.Eid==id);
-                
+                var EventsData1 = uow._iEventsDataRepository.Get().ToList();
+                foreach (var item in uow._iEventsDataRepository.QueryObjectGraph(x => x.EventDataid > 0, "EventsName"))
+                {
+                    var t = item;
+                }
+                EventsData = uow._iEventsDataRepository.Get().ToList().Where(x=>x.Eid== Convert.ToInt32(TempData["id"]));                
             }
-
+            int id = Convert.ToInt32(TempData["id"]);
+            TempData.Keep("id");
             int pageIndex = Convert.ToInt32(page) - 1;
             int pageSize = rows;
             var todoListsResults = EventsData.Select(
@@ -100,7 +102,9 @@ namespace Events.Areas.EventsData.Controllers
 
         [HttpGet]
         public ActionResult Create()
-        {           
+        {
+           // int id = Convert.ToInt32(TempData["id"]);
+           // TempData.Keep("id");
             return View();
         }
 

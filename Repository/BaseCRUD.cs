@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Web;
 
 namespace Repository
@@ -41,6 +42,11 @@ namespace Repository
         {
             T _T = _Dbset.Find(id);
             Delete(_T);
+        }
+
+        public IEnumerable<T> QueryObjectGraph(Expression<Func<T, bool>> filter, string children)
+        {
+            return _Dbset.Include(children).Where(filter);
         }
     }
 }

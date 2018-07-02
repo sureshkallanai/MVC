@@ -8,7 +8,7 @@ using System.Web;
 namespace Repository
 {
     public class EventData
-    {
+    {       
         [Key]
         public int EventDataid { get; set; }
         public string Name { get; set; }
@@ -17,6 +17,6 @@ namespace Repository
         public string City { get; set; }
         public int Eid { get; set; }
 
-        public DbSet<EventsName> Event { get; set; }
+        public virtual EventsName EventsName { get; set; }
     }
 }

@@ -17,6 +17,7 @@
     <input type="submit" name="Submit" id="submitdata" />
 }
 
+@{ var id = Convert.ToInt32(TempData["id"]);
+@Html.ActionLink("Back", "Index", "/EData/index/" + id + "")};
 
-@Html.ActionLink("Back", "Index", "EData")
 
