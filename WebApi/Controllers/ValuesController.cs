@@ -11,6 +11,27 @@ namespace WebApi.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
+
+        //public async Task<ActionResult> Index()
+        //{
+        //    using (var client = new HttpClient())
+        //    {
+
+        //        client.BaseAddress = new Uri("http://localhost:61908/");
+        //        client.DefaultRequestHeaders.Accept.Clear();
+        //        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+        //        //GET Method  
+        //        HttpResponseMessage response = await client.GetAsync("api/values");
+        //        if (response.IsSuccessStatusCode)
+        //        {
+        //            IEnumerable<string> str = await response.Content.ReadAsAsync<IEnumerable<string>>();
+        //            // Get the URI of the created resource.  
+        //            Uri returnUrl = response.Headers.Location;
+        //            Console.WriteLine(returnUrl);
+        //        }
+        //    }
+        //}
+
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
