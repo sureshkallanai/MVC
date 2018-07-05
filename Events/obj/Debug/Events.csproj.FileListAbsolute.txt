@@ -50,3 +50,12 @@ D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\System.Web.Mvc.xml
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\obj\Debug\Events.csprojResolveAssemblyReference.cache
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\obj\Debug\Events.dll
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\obj\Debug\Events.pdb
+D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\Newtonsoft.Json.dll
+D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\System.Net.Http.dll
+D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\System.Net.Http.Extensions.dll
+D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\System.Net.Http.Formatting.dll
+D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\System.Net.Http.Primitives.dll
+D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\System.Net.Http.WebRequest.dll
+D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\Newtonsoft.Json.xml
+D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\System.Net.Http.xml
+D:\Suresh\Projects\DEVOPS\Jenkins\Events\Events\bin\System.Net.Http.WebRequest.xml

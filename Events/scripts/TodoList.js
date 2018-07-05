@@ -1,8 +1,9 @@
 ﻿$(function () {
     $("#grid").jqGrid({
-        url: "/EventsData/EData/GetTodoLists",
+        url: '/EventsData/EData/GetTodoLists',
+        postData: { 'keyword':4},
         datatype: 'json',
-        mtype: 'Get',
+        mtype: 'Get',       
         colNames: ['EventDataid', 'Name', 'Address', 'District', 'City', 'Eid'],
         colModel: [
             { key: true, hidden: true, name: 'EventDataid', index: 'EventDataid', editable: true },
@@ -45,7 +46,8 @@
         {
             // add options
             zIndex: 100,
-            url: "/EventsData/EData/Create",            
+            url: "/EventsData/EData/Create",
+            postData: { 'eid': '1' },
             closeOnEscape: true,
             closeAfterAdd: true,
             afterComplete: function (response) {
@@ -58,6 +60,7 @@
             // delete options
             zIndex: 100,
             url: "/EventsData/EData/Delete",
+            postData: { 'Id': 4 },
             closeOnEscape: true,
             closeAfterDelete: true,
             recreateForm: true,
