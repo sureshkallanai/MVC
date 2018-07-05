@@ -38,7 +38,7 @@ namespace Events.Areas.HandleInfo.Controllers
                 Dictionary<int, string> dic = new Dictionary<int, string>();
                 //FormUrlEncodedContent formContent = new FormUrlEncodedContent(dic);
                 //GET Method  
-                //HttpResponseMessage response = await client.GetAsync("api/values");
+                HttpResponseMessage response = await client.GetAsync("api/values");
                 
                 if (response.IsSuccessStatusCode)
                 {
