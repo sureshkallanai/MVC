@@ -34,7 +34,7 @@ namespace Events.Areas.HandleInfo.Controllers
                 client.BaseAddress = new Uri("http://localhost:65214/");
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                var id = 1;
+                //var id = 1;
                 Dictionary<int, string> dic = new Dictionary<int, string>();
                 //FormUrlEncodedContent formContent = new FormUrlEncodedContent(dic);
                 //GET Method  
@@ -44,15 +44,13 @@ namespace Events.Areas.HandleInfo.Controllers
                 {
                    // IEnumerable<string> str = await response.Content.ReadAsAsync<IEnumerable<string>>();
                     // Get the URI of the created resource.  
-                    Uri returnUrl = response.Headers.Location;
+                   Uri returnUrl = response.Headers.Location;
                    Console.WriteLine(returnUrl);
                 }
             }
-            return View();
-            
+            return View();            
         }
-
-
+        
         public ActionResult Create()
         {
             return View();

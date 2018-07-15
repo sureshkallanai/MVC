@@ -7,7 +7,8 @@ using System.Web.Http;
 
 namespace WebApi.Controllers
 {
-    [Authorize]
+    //[Authorize]
+    [BasicAuthentication]
     public class ValuesController : ApiController
     {
         // GET api/values
