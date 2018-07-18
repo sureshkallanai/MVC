@@ -8,8 +8,8 @@ namespace Repository.Migrations
     internal sealed class Configuration : DbMigrationsConfiguration<Repository.DatabaseContext>
     {
         public Configuration()
-        {
-            AutomaticMigrationsEnabled = false;
+        {           
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Repository.DatabaseContext context)

@@ -32,8 +32,8 @@ D:\Suresh\Projects\DEVOPS\Jenkins\Events\Repository\bin\Microsoft.AI.Web.xml
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Repository\bin\Microsoft.AI.WindowsServer.xml
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Repository\bin\Microsoft.ApplicationInsights.xml
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Repository\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Suresh\Projects\DEVOPS\Jenkins\Events\Repository\obj\Debug\Repository.Migrations.DatabaseContext.resources
+D:\Suresh\Projects\DEVOPS\Jenkins\Events\Repository\obj\Debug\Repository.csproj.GenerateResource.Cache
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Repository\obj\Debug\Repository.dll
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Repository\obj\Debug\Repository.pdb
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
-D:\Suresh\Projects\DEVOPS\Jenkins\Events\Repository\obj\Debug\Repository.Migrations.DatabaseContext.resources
-D:\Suresh\Projects\DEVOPS\Jenkins\Events\Repository\obj\Debug\Repository.csproj.GenerateResource.Cache

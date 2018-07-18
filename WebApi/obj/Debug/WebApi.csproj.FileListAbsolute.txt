@@ -85,5 +85,6 @@ D:\Suresh\Projects\DEVOPS\Jenkins\Events\WebApi\bin\Microsoft.Owin.Security.Goog
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\WebApi\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\WebApi\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\WebApi\bin\System.Web.Http.Owin.xml
+D:\Suresh\Projects\DEVOPS\Jenkins\Events\WebApi\obj\Debug\WebApi.csprojResolveAssemblyReference.cache
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\WebApi\obj\Debug\WebApi.dll
 D:\Suresh\Projects\DEVOPS\Jenkins\Events\WebApi\obj\Debug\WebApi.pdb
