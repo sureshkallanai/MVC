@@ -9,7 +9,7 @@
     @Html.LabelFor(m => m.UserName);
     @Html.TextBoxFor(m => m.UserName);
     @Html.LabelFor(m => m.Password);
-    @Html.TextBoxFor(m => m.Password);
+    @Html.TextBoxFor(m => m.Password,new { type = "Password" });
     <input type="submit" id="Loging" name="Subit" />
 }
 
